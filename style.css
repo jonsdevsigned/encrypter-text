@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --main-font: "Inter", sans-serif;
+    --primary-color: #0A3871;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F3F5FC;
+    height: 100vh;
+}
+
+section {
+    padding: 2.5rem 2.5rem 1.25rem 2.5rem;
+    height: 75%;
+    display: flex;
+}
+
+.encrypter_image {
+    width: 4rem;
+}
+
+.entry_text {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 6rem 5rem 0 3rem;
+}
+
+.encrypter_text {
+    display: flex;
+    /* border: 1px solid orange; */
+    width: 45%;
+    justify-content: center;
+    
+}
+
+.box_text {
+    border: 0;
+    height: 100%;
+    resize: none;
+    background-color: #F3F5FC;
+    font-family: var(--main-font);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    outline: 0;
+}
+
+.box_text::placeholder {
+    color: var(--primary-color);
+    font-family: var(--main-font);
+    font-size: 1.5rem; 
+    opacity: 100%;   
+}
+
+#box_encrypter{
+    background-color: white;
+}
+
+.caution {
+    display: flex;
+    align-items: center;
+    margin: .5rem 0 0 0;
+}
+
+.icon_caution {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 .2rem 0 0;
+}
+
+small{
+    font-family: var(--main-font);
+    font-size: .8rem;
+    color: #495057;
+}
+
+.buttons_action {
+    margin: 1rem 0 0 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.buttons_action_encrypter {
+    font-family: var(--main-font);
+    background-color: var(--primary-color);
+    color: white;
+    width: 45%;
+    padding: 1rem;
+    border-radius: 18px;
+    border: none;
+}
+
+.buttons_action_desencrypter {
+    font-family: var(--main-font);
+    background-color: #D8DFE8;
+    color: var(--primary-color);
+    width: 45%;
+    padding: 1rem;
+    border-radius: 18px;
+    border: 1px solid var(--primary-color);
+}
+
+footer {
+    
+    padding: 2rem 0 0 0;
+    height: 10%;
+}
+
+.publicity {
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_image{
+    width: 2.2rem;
+    margin: 0 .3rem 0 0
+}
+
+.jons{
+    font-family: "Urbanist", sans-serif;
+    font-weight: 900;
+    color: #6FD72B;
+}
+
+.dev{
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    color: #00B3FF;
+}
+
+.signed {
+    font-family: "Urbanist", sans-serif;
+    color: #00B3FF;   
+}
+
+.developer {
+    font-family: var(--main-font);
+    font-size: .8rem;
+    color: var(--primary-color);
+    text-align: center;
+}
