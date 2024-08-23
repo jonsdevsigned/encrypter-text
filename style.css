@@ -55,14 +55,14 @@ section {
     color: var(--primary-color);
     font-family: var(--main-font);
     font-size: 1.5rem; 
-    opacity: 100%;   
+    opacity: 100%;
 }
 
 #box_encrypter_before {
     background-color: white;
     width: 100%;
-    border-radius: 18px;
     padding: 1rem;
+    border-radius: 18px;
     box-shadow: #00000014 0 24px 32px -8px;
     display: flex;
     flex-direction: column;
@@ -86,16 +86,6 @@ section {
     font-size: 1rem;
     line-height: 150%;
     color: #495057;
-}
-
-#box_encrypter {
-    display: none;
-    background-color: white;
-    font-size: 1.3rem;
-    width: 100%;
-    border-radius: 18px;
-    padding: 1rem;
-    box-shadow: #00000014 0 24px 32px -8px;
 }
 
 .caution {
@@ -134,7 +124,11 @@ small{
 }
 
 .buttons_action_encrypter:hover {
-    background-color: red;
+    background-color: #072f5f;
+}
+
+.buttons_action_encrypter:active {
+    transform: scale(.95);
 }
 
 .buttons_action_desencrypter {
@@ -147,6 +141,53 @@ small{
     border-radius: 18px;
     border: 1px solid var(--primary-color);
     font-size: 1rem;
+}
+
+.buttons_action_desencrypter:hover {
+    background-color: #c9ced4;
+}
+
+.buttons_action_desencrypter:active {
+    transform: scale(.95);
+}
+
+#box_encrypter {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-size: 1.3rem;
+    border-radius: 18px;
+    padding: 1rem;
+    box-shadow: #00000014 0 24px 32px -8px;
+    height: 97%;
+}
+
+#box_text_encrypter{
+    background-color: white;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    scrollbar-width: thin;
+}
+
+.buttons_action_copy{
+    font-family: var(--main-font);
+    background-color: white;
+    color: var(--primary-color);
+    width: 100%;
+    max-width: 296px;
+    padding: 1rem;
+    border-radius: 18px;
+    border: 1px solid var(--primary-color);
+    font-size: 1rem;
+}
+
+.buttons_action_copy:hover {
+    background-color: #D8DFE8;
+}
+
+.buttons_action_copy:active {
+    transform: scale(.95);
 }
 
 footer {
@@ -196,17 +237,16 @@ footer {
     }
 
     section {
-        border: 1px solid #6FD72B;
         padding: 2rem 2rem 0 2rem;
-        height: 88%;
+        
         flex-direction: column;
         gap: 3rem;
     }
 
     .entry_text {
-        border: 1px solid magenta;
         height: 55%;
         width: 100%;
+        padding: 0;
     }
 
     .encrypter_text {
@@ -214,11 +254,18 @@ footer {
         height: 15%;
     }
 
-    #box_encrypter{
-    }
-
     .image_encryptor {
         display: none;
+    }
+
+    .none_message {
+        font-size: 1.2rem;
+        padding: .8rem 0 0 0;
+    }
+    
+    .instruction {
+        font-size: .9rem;
+        margin: -1.3rem 0 0 0;
     }
 
     .buttons_action {
@@ -234,5 +281,9 @@ footer {
     
     .buttons_action_desencrypter {
         max-width: none;
+    }
+
+    #box_encrypter{
+        height: 8rem;
     }
 }

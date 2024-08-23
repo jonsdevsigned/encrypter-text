@@ -12,13 +12,13 @@
             <img src="./assets/icon-encryptor.png" alt="Icono representando la acción de codificar" class="encrypter_image">
         </header>
         <div class="entry_text">
-            <textarea name="ingrese el texto aquí" class="box_text" placeholder="Ingrese el texto aquí"></textarea>
+            <textarea class="box_text" id="box_text_user" placeholder="Ingrese el texto aquí"></textarea>
             <div class="caution">
                 <img src="./assets/icon-caution.png" alt="Icono de precaución" class="icon_caution"><small>Solo letras minúsculas y sin acentos</small>
             </div>
             <div class="buttons_action">
-                <button class="buttons_action_encrypter" onclick="encrypterText()">Encriptar</button>
-                <button class="buttons_action_desencrypter">Desencriptar</button>
+                <button class="buttons_action_encrypter" onclick="buttonEncrypter()">Encriptar</button>
+                <button class="buttons_action_desencrypter" onclick="buttonDesencrypter()">Desencriptar</button>
             </div>
         </div>
         <div class="encrypter_text">
@@ -27,7 +27,11 @@
                 <p class="none_message">Ningún mensaje fue encontrado</p>
                 <p class="instruction">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
-            <textarea name="" class="box_text" id="box_encrypter"></textarea>
+            <div id="box_encrypter">
+                <textarea class="box_text" id="box_text_encrypter" readonly="readonly"></textarea>
+                <button class="buttons_action_copy" id="btn_copy" onclick="copy()">copiar</button>
+            </div>
+            
         </div>
     </section>
     <footer>
